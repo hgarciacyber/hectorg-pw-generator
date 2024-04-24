@@ -1,0 +1,149 @@
+@font-face {
+    font-family: VCR FONT;
+    src: url(VCR_OSD_MONO_1.001.ttf);
+}
+
+body {
+    font-family: 'VCR FONT';
+    font-weight: 200;@font-face {
+        font-family: 'VCR FONT';
+        src: url(VCR_OSD_MONO_1.001.ttf);
+    }
+    
+    
+    
+ .outer-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 600vh;
+     margin: auto;
+     padding: 40px 0 20px; /* Adjust the padding to make the top border bigger */
+     
+    }   
+    
+    .container {
+        width: 100%;
+        max-width: 600px; /* Adjust the max-width as per your preference */
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #00d018; /* Add a border around the container */
+        text-align: center;
+        box-sizing: border-box; /* Include padding and border in width and height calculations */
+        position: relative; /* Add position relative to the container */
+        overflow: hidden; /* Hide any content that overflows the container */
+    }
+    
+    .center-heading {
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 20px;
+        position: relative; /* Position the heading relative to the container */
+        top: -30px; /* Adjust the top value to position it inside the top border */
+        left: 50%; /* Center the heading horizontally */
+        transform: translateX(-50%); /* Center the heading horizontally */
+        z-index: 1; /* Set the z-index to ensure it appears above the top border */
+    }
+    
+    .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px; /* Adjust the height to match the desired top border size */
+        background-color: #00d018; /* Set the background color of the top border */
+        z-index: 0; /* Set the z-index to ensure it appears below the heading */
+    }
+    
+    .password-display {
+        width: 100%;
+        max-width: 300px; /* Adjust the max-width as per your preference */
+        padding: 10px;
+        margin: 0 auto;
+        background-color: #000000;
+        border: 1px solid #00d018;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #00d018;
+        margin-top: 20px;
+    }
+    
+    #generate-button {
+        background-color: black;
+        color: #00d018;
+        border: 2px solid #00d018;
+    }
+    
+    #length {
+        background-color: black;
+        color: #00d018;
+        -moz-appearance: textfield;
+        appearance: textfield;
+        border: 2px solid #00d018;      
+    }
+    
+    
+
+    #length::-webkit-inner-spin-button,
+    #length::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    color: #00d018;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.center-heading {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.password-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    border: 1px solid #00d018;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00d018;
+}
+
+#generate-button {
+    font-family: vcr font;
+    background-color: black;
+    color: #00d018;
+    border: 2px solid #00d018;
+}
+
+#length {
+    font-family: vcr font;
+    background-color: black;
+    color: #00d018;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.raised-div {
+    transform: translateY(-20%);
+}
+#length::-webkit-inner-spin-button,
+#length::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
